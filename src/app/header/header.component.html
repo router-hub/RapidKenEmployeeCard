@@ -1,0 +1,27 @@
+<div class="top">
+    <div class="head">
+        <i class="far fa-list-alt" style="font-size:50px; color : #f4a896;font-weight:800;"></i>
+        <span >RapidKen.AI</span>
+    </div>
+   
+</div>
+
+<div class="links">
+    <span class="radio">  
+        <label>  
+            <input type="radio" name="link" value="registration"  (click)="Link('/registration')" checked >  
+            Employee Registration
+        </label>  
+    </span>  
+    <span class="radio">  
+     <label>  
+            <input type="radio" name="link" value="employee" (click)="Link('/employee')">  
+            Employee List
+        </label>  
+    </span> 
+
+
+
+</div>
+
+<router-outlet></router-outlet>
