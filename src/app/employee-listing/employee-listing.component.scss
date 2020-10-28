@@ -1,0 +1,76 @@
+@import"https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap";
+.top{
+    @media (min-width: 576px){
+        width: 40%;
+    }
+
+    @media (min-width: 768px) {
+        width: 40%;
+
+    }
+
+    @media (min-width: 992px) {
+        width: 20%;
+    }
+
+    @media (min-width: 1200px) {
+        width: 20%;
+    }
+    margin:1% auto;
+    padding:2%;
+    // height:600px;
+    background-color:#358597;
+
+    .card{
+        display:block;
+        margin:auto;
+        .example-card {
+            max-width: 500px;
+            margin: 4px;
+
+            mat-card-header{
+                mat-icon{
+                    float: right;
+                }
+                mat-card-title{
+                    font-family: 'Nunito Sans', sans-serif;
+                    color:#358597;
+                    font-size:15px;
+                }
+                mat-card-subtitle{
+                    font-family: 'Nunito Sans', sans-serif;
+                    color:#f4a896;
+                    font-size:10px;
+                }
+                
+            }
+            mat-card-content{
+                font-family: 'Nunito Sans', sans-serif;
+                color:#000;
+                font-size:12px;
+                margin:1%;
+            }
+            .example-header-image {
+                width:25%;
+                background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+                background-size: cover;
+              }
+
+              mat-card-footer{
+                font-family: 'Nunito Sans', sans-serif;
+                color:#358597;
+                font-size:12px;
+                margin:1%;
+                span{
+                    color:#f4a896;
+                }
+
+              }
+          }
+
+         
+    }
+
+   
+}
+

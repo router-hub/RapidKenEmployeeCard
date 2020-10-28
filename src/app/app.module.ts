@@ -10,11 +10,16 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { MatInputModule } from '@angular/material/input';
 import { AppRoutingModule } from './app-routing.module';
 import {MatRadioModule} from '@angular/material/radio';
+import {MatCardModule} from '@angular/material/card';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatIconModule} from '@angular/material/icon';
 
 import { AppComponent } from './app.component';
 import { EmployeeRegistrationComponent } from './employee-registration/employee-registration.component';
 import { EmployeeListingComponent } from './employee-listing/employee-listing.component';
 import { HeaderComponent } from './header/header.component';
+
+import {EmployeeServiceService} from './employee-service.service'
 
 @NgModule({
   declarations: [
@@ -33,9 +38,13 @@ import { HeaderComponent } from './header/header.component';
     MatToolbarModule,
     MatDialogModule,
     MatInputModule,
-    MatRadioModule
+    MatRadioModule,
+    MatCardModule,
+    MatDividerModule,
+    MatIconModule
+
   ],
-  providers: [],
+  providers: [EmployeeServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

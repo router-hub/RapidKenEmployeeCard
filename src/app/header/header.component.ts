@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
- public link = "registration";
+ public link = "/registration";
   constructor(public router: Router) { }
 
   ngOnInit(): void {

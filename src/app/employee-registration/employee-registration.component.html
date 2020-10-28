@@ -1,1 +1,39 @@
-<p>employee-registration works!</p>
+<div class="top">
+    <form validate #loginForm="ngForm" *ngIf="formOpen" (ngSubmit)="onSubmit()">
+        <!-- {{loginForm.value | json}} -->
+        <div class="form-group">
+            <label for="name">Your Name:</label>
+            
+            <input  type="text" [(ngModel)]="name" #employeeName="ngModel" name="name" class="form-control" required [class.is-invalid]="employeeName.invalid && employeeName.touched">
+        </div> 
+        <div class="form-group">
+            <label for="position">Your Position:</label>
+            
+            <input type="text" [(ngModel)]="position" name="position"  #employeePosition="ngModel" required  class="form-control" [class.is-invalid]="employeePosition.invalid && employeePosition.touched">
+        </div>
+        <div class="form-group">
+            <label for="about"> specification:</label>
+            
+            <input type="text"  [(ngModel)]="about" name="about"  #employeeAbout="ngModel" required  class="form-control" [class.is-invalid]="employeeAbout.invalid && employeeAbout.touched">
+        </div>
+        <div class="form-group">
+            <label for="joining">Your joing date:</label>
+            
+            <input type="date"  [(ngModel)]="joining" name="joining"  #employeeJoining="ngModel" required  class="form-control" [class.is-invalid]="employeeJoining.invalid && employeeJoining.touched"> 
+        </div>
+        
+        <div class="form-group" style="margin:1%">
+            <button class="btn btn-dark" type="submit" [disabled]="loginForm.value.name==''||loginForm.value.position==''||loginForm.value.about==''||loginForm.value.joining==''" style="display:block; margin:5% auto;">Submit</button>
+        </div>
+    </form>
+
+    <div *ngIf="display">
+        <div class="message" >{{message}}</div>
+        <div>
+            <button type="button" class="btn btn-dark" (click)="form()">Submit more</button> <br>
+            <!-- <a type="button" class="btn btn-dark" routerLink="/employee" >View Employees</a> -->
+
+        </div>
+    </div>
+   
+</div>
