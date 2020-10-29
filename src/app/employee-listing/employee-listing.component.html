@@ -1,7 +1,7 @@
-<div class="top">
+<div class="container col col-lg-4">
     <div *ngIf="employeeList.length!=0">
         <div *ngFor ="let employee of employeeList" class="card">
-            <mat-divider></mat-divider>
+            <!-- <mat-divider></mat-divider> -->
             <mat-card class="example-card">
                 <mat-card-header>
                 <mat-icon role="button" style="cursor: pointer" type="button" (click)="removeEmployee(employee)">highlight_off</mat-icon>

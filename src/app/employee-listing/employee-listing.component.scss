@@ -1,31 +1,18 @@
 @import"https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap";
-.top{
-    @media (min-width: 576px){
-        width: 40%;
-    }
-
-    @media (min-width: 768px) {
-        width: 40%;
-
-    }
-
-    @media (min-width: 992px) {
-        width: 20%;
-    }
-
-    @media (min-width: 1200px) {
-        width: 20%;
-    }
-    margin:1% auto;
+.container{
+    
+    // margin:1% auto;
     padding:2%;
     // height:600px;
     background-color:#358597;
 
     .card{
-        display:block;
-        margin:auto;
+        max-width: 300px;
+        margin: 5px auto;
+        // display:block;
+        // margin:auto;
         .example-card {
-            max-width: 500px;
+            max-width: 300px;
             margin: 4px;
 
             mat-card-header{

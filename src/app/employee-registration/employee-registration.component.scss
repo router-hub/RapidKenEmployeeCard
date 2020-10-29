@@ -1,31 +1,17 @@
 @import"https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap";
-.top{
+.container{
     
-    @media (min-width: 576px){
-        width: 80%;
-    }
-
-    @media (min-width: 768px) {
-        width: 60%;
-
-    }
-
-    @media (min-width: 992px) {
-        width: 40%;
-    }
-
-    @media (min-width: 1200px) {
-        width: 20%;
-    }
    
-    margin:1% auto;
+   
+    // margin:1% auto;
     padding:2%;
     // height:600px;
     background-color:#358597;
     
     form{
-        display:block;
-        margin: auto;
+        // display:block;
+        // margin: auto;
+        margin:1%;
         
            div {
             margin:1%;
@@ -36,6 +22,12 @@
                 margin:5%;
                 font-family: 'Nunito Sans', sans-serif;
                 color: #fff;
+            }
+
+            mat-error{
+                color:#f4a896;
+                font-family: 'Nunito Sans', sans-serif;
+
             }
 
             // input{
@@ -55,5 +47,9 @@
         font-family: 'Nunito Sans', sans-serif;
         text-justify: auto;
         color:#f4a896;
+       
+    }
+    div a{
+        margin:5px;
     }
 }

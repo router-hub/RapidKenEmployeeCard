@@ -7,18 +7,21 @@
 </div>
 
 <div class="links">
-    <span class="radio">  
+    <!-- <span class="radio">  
         <label>  
-            <input type="radio" name="link" value="registration"  (click)="Link('/registration')" checked >  
+            <input type="radio" name="link" value="registration"  (click)="Link('/registration')" [checked]="this.link=='/registration'" >  
             Employee Registration
         </label>  
     </span>  
     <span class="radio">  
      <label>  
-            <input type="radio" name="link" value="employee" (click)="Link('/employee')">  
+            <input type="radio" name="link" value="employee" (click)="Link('/employee')" [checked]="this.link=='/registration'">  
             Employee List
         </label>  
-    </span> 
+    </span>  -->
+
+    <a type =" button" class="btn btn-dark" routerLink="/registration" routerLinkActive>Employee Registartion</a>
+    <a type =" button" class="btn btn-dark" routerLink="/employee" routerLinkActive>Employee List</a>
 
 
 
