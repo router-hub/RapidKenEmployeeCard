@@ -43,7 +43,6 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,
@@ -66,18 +65,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "rapidken-ai:build"
+            "buildTarget": "rapidken-ai:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "rapidken-ai:build:production"
+              "buildTarget": "rapidken-ai:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "rapidken-ai:build"
+            "buildTarget": "rapidken-ai:build"
           }
         },
         "test": {
@@ -125,7 +124,6 @@
       }
     }
   },
-  "defaultProject": "rapidken-ai",
   "cli": {
     "analytics": "373101a3-2904-49bc-bfad-ad48035168ff"
   }
